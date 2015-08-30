@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hi! I'm Carl!</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href ="css/style.css" >
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/angular/angular.js"></script>
+	<script src="scripts/script.js"></script>
+</head>
+
+<body ng-app='mySite' ng-controller="MainController as main">
+	<ul id ="menuBar" class="list-inline container text-center">
+		<li ng-repeat="link in links"><a href="#{{link.name}}">{{link.name}}</a></li>
+	</ul>
+	
+	<div id="slideshow" class="jumbotron" ng-controller="SlideshowController">
+		<div>Carl Amko</div>
+		<img alt ="slideshowimg" src="{{imgString}}">
+	</div>
+	
+	<div id ="content" class ="container-fluid"> 
+		<div class="container" ng-repeat="link in links">
+		<span class="container" name="{{link.name}}">{{link.name}}</span>
+		<ng-include src="link.url"></ng-include>
+		</div>
+	</div>
+	
+	<div id="footer" class="container">
+		<ul id ="footerMenu" class="list-inline center-block text-center">
+			<li ng-repeat="link in links"><a href="#{{link.name}}">{{link.name}}</a></li> <br>
+			<li>&copy; Carl Amko, 2015</li>
+		</ul>
+		
+	</div>
+</body>
+
+</html>

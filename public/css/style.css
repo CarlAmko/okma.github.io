@@ -1,0 +1,90 @@
+html {
+	height: 100%;
+}
+body {
+	height:99%;
+	background-image: url();
+}
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+}
+#menuBar {
+	position: relative;
+	right:5%;
+	top: 2%;
+}
+#menuBar li {
+	margin: 2%;
+	font-size: 16px;
+	color: rgba(127,127,127,0.5);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#menuBar li:hover {
+	font-size: 22px;
+	color: black;
+}
+#slideshow {
+	height: 40%;
+	font-size: 36px;
+	padding-left: 50px;
+	color: white;
+}
+#slideshow img {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	position: relative;
+	z-index: 0;
+}
+#slideshow div {
+	position: relative;
+	z-index: 1;
+}
+#content {
+	position: relative;
+	height: auto;
+	border: 1px solid green;
+	background-image: url("carl.png");
+}
+#content div {
+	color: black;
+	background-color: white;
+	padding-bottom: 25px;
+}
+#content div:nth-child(even){
+	background-color:black;
+	color: white;
+}
+#content a {
+	color: lightblue;
+}
+#content a:hover {
+	color: grey;
+	text-decoration: underline;
+}
+div .container{
+	height: 20%;
+}
+span.container{
+	font-size: 28px;
+}
+dd a {
+	color: blue;
+}
+dd a:hover{
+	color: grey;
+	text-decoration: underline;
+}
+#footer {
+	
+}
+#footer a:hover{
+	color: grey;
+}
