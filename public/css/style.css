@@ -17,12 +17,12 @@ a, a:hover, a:focus {
 #menuBar li {
 	margin: 2%;
 	font-size: 16px;
-	color: rgba(127,127,127,0.5);
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	color: #4C4C4C;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 #menuBar li:hover {
 	font-size: 22px;
@@ -30,7 +30,7 @@ a, a:hover, a:focus {
 }
 #slideshow {
 	height: 40%;
-	font-size: 36px;
+	font-size: 46px;
 	padding-left: 50px;
 	color: white;
 }
@@ -50,16 +50,18 @@ a, a:hover, a:focus {
 #content {
 	position: relative;
 	height: auto;
+	font-size: 24px;
 	border: 1px solid green;
 	background-image: url("carl.png");
 }
 #content div {
 	color: black;
 	background-color: white;
-	padding-bottom: 25px;
+	padding: 30px;
+	padding-top: 15px;
 }
 #content div:nth-child(even){
-	background-color:black;
+	background-color:#4C4C4C;
 	color: white;
 }
 #content a {
@@ -69,11 +71,9 @@ a, a:hover, a:focus {
 	color: grey;
 	text-decoration: underline;
 }
-div .container{
-	height: 20%;
-}
-span.container{
-	font-size: 28px;
+h6 {
+	font-size: 60px;
+	margin-left: 30px;
 }
 dd a {
 	color: blue;
