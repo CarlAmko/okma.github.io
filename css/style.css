@@ -3,7 +3,6 @@ html {
 }
 body {
 	height:99%;
-	background-image: url();
 }
 a, a:hover, a:focus {
 	color: inherit;
@@ -31,6 +30,7 @@ a, a:hover, a:focus {
 #slideshow {
 	height: 40%;
 	font-size: 46px;
+	font-family: 'Open Sans', sans-serif;
 	padding-left: 50px;
 	color: white;
 	background-image: url('../jumbo0.png');
@@ -41,6 +41,8 @@ a, a:hover, a:focus {
 	-o-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	font-weight: 700;
+	font-style: italic;
 }
 #slideshow img {
 	-webkit-transition: all 0.5s ease;
@@ -64,7 +66,7 @@ a, a:hover, a:focus {
 	background-image: url("../pic1.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	
+	font-family: 'Open Sans', sans-serif;
 }
 #content div {
 	color: black;
@@ -87,6 +89,8 @@ a, a:hover, a:focus {
 h6 {
 	font-size: 60px;
 	margin-left: 30px;
+	font-weight: 700;
+	font-style: italic;
 }
 dd a {
 	color: blue;
