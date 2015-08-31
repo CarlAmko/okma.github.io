@@ -5,10 +5,10 @@ server = require('http').createServer(app),
 io = require('socket.io').listen(server);
 var port = process.env.PORT || 5000;
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/'));
 
  app.get('/', function(express, res) {
-        fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, text){
+        fs.readFile(__dirname + '/index.html', 'utf8', function(err, text){
             res.send(text);
         });
     });
