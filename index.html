@@ -28,7 +28,7 @@
 	<!--Main content box-->
 	<div id ="content" class ="container-fluid"> 
 		<div class="boxx container" ng-repeat="link in links">
-		<h6 name="{{link.name}}">{{link.name}}</h6>
+		<h6 id="{{link.name}}">{{link.name}}</h6>
 		<ng-include src="link.url"></ng-include>
 		</div>
 	</div>

@@ -15,7 +15,7 @@ a, a:hover, a:focus {
 }
 #menuBar li {
 	margin: 2%;
-	font-size: 16px;
+	font-size: 22px;
 	color: #4C4C4C;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -24,7 +24,7 @@ a, a:hover, a:focus {
 	transition: all 0.3s ease;
 }
 #menuBar li:hover {
-	font-size: 22px;
+	font-size: 26px;
 	color: black;
 }
 #slideshow {
@@ -43,6 +43,7 @@ a, a:hover, a:focus {
 	transition: all 0.5s ease;
 	font-weight: 700;
 	font-style: italic;
+	text-shadow: 3px 5px 3px black;
 }
 #slideshow img {
 	-webkit-transition: all 0.5s ease;
@@ -62,7 +63,6 @@ a, a:hover, a:focus {
 	position: relative;
 	height: auto;
 	font-size: 24px;
-	border: 1px solid green;
 	background-image: url("../pic1.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -79,6 +79,9 @@ a, a:hover, a:focus {
 	background-color:#4C4C4C;
 	color: white;
 }
+#content div:nth-child(even)>h6{
+	text-shadow: 4px 3px 3px black;
+}
 #content a {
 	color: lightblue;
 }
@@ -91,6 +94,7 @@ h6 {
 	margin-left: 30px;
 	font-weight: 700;
 	font-style: italic;
+	text-shadow: 4px 3px 3px grey;
 }
 dd a {
 	color: blue;
