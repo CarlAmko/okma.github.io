@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--Header Data-->
 	<meta charset="utf-8">
+	<!--Website Title-->
 	<title>Hi! I'm Carl!</title>
+	<!--Linking scripts and css-->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href ="css/style.css" >
 	<script src="scripts/jquery.min.js"></script>
 	<script src="scripts/angular/angular.js"></script>
 	<script src="scripts/script.js"></script>
 </head>
-
+<!--Body-->
 <body ng-app='mySite' ng-controller="MainController as main">
+
+	<!--Menu at top of page-->
 	<ul id ="menuBar" class="list-inline container text-center">
 		<li ng-repeat="link in links"><a href="#{{link.name}}">{{link.name}}</a></li>
 	</ul>
 	
+	<!--Slideshow-->
 	<div id="slideshow" class="jumbotron" ng-controller="SlideshowController">
-		<div>Carl Amko</div>
-		<img alt ="slideshowimg" src="{{imgString}}">
+	Carl Amko
 	</div>
 	
+	<!--Main content box-->
 	<div id ="content" class ="container-fluid"> 
-		<div class="container" ng-repeat="link in links">
+		<div class="boxx container" ng-repeat="link in links">
 		<h6 name="{{link.name}}">{{link.name}}</h6>
 		<ng-include src="link.url"></ng-include>
 		</div>
 	</div>
 	
+	<!--Footer Links-->
 	<div id="footer" class="container">
 		<ul id ="footerMenu" class="list-inline center-block text-center">
 			<li ng-repeat="link in links"><a href="#{{link.name}}">{{link.name}}</a></li> <br>
