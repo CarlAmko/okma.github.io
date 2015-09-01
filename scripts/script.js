@@ -29,7 +29,7 @@ $(document).ready(function() {
 	var selector = 0;
 	window.setInterval(function() {
 		selector++;
-		if(selector > 2) selector = 0;
+		if(selector > 3) selector = 0;
 		var stringPath = "jumbo" + selector +".png";
 		$('#slideshow').css('background-image',"url(" + stringPath + ")");
 	}, 5000);
