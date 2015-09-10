@@ -47,19 +47,23 @@ app.controller('MainController', function($scope) {
 	[ 
 		{
 			name:'Home',
-			url:'Home.htm'
+			url:'Home.htm',
+			anchor: "#Home"
 		},
 		{
 			name:'Projects',
-			url:'Projects.htm'
+			url:'Projects.htm',
+			anchor: "#Projects"
 		},
 		{
 			name:'Skills',
-			url:'Other.htm'
+			url:'Other.htm',
+			anchor: "#Skills"
 		},
 		{
 			name:'Contact',
-			url:'Contact.htm'
+			url:'Contact.htm',
+			anchor: "#Contact"
 		}
 	];
 	
