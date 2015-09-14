@@ -93,7 +93,7 @@ app.controller('SocialMediaCtrl', function($scope) {
 		},
 		{
 			name: 'LinkedIn',
-			url: 'www.linkedin.com/in/carlamko',
+			url: 'https://www.linkedin.com/in/carlamko',
 			icon: 'fa-linkedin'
 		},
 		{
@@ -103,7 +103,7 @@ app.controller('SocialMediaCtrl', function($scope) {
 		},
 		{
 			name: 'Email',
-			url: 'mailto:c.amko@ufl.edu',
+			url: 'https://mailto:c.amko@ufl.edu',
 			icon: 'fa-envelope-o'
 		}
 	];
