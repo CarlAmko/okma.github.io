@@ -1,14 +1,15 @@
-Have questions? Wanna work together? <br>
-Feel free to contact me with any of the below. <br><br>
-<dl class="dl-horizontal">
-  <dt>Email</dt>
-  <dd>c.amko@ufl.edu</dd>
-  <dt>Work Email</dt>
-  <dd>carl@immersedgames.com</dd>
-  <dt>Facebook</dt>
-  <dd><a target="_blank" href="https://facebook.com/itsdefnotcarl/">Carl Amko</a></dd>
-  <dt>Github</dt>
-  <dd><a target="_blank" href="https://github.com/Okma/">Carl Amko</a></dd>
-  <dt>LinkedIn</dt>
-  <dd><a target="_blank" href="https://linkedin.com/itsdefnotcarl/">Carl Amko</a></dd>
-</dl>
+Have questions? Wanna work together?
+<br> Feel free to contact me with any of the below.
+<br>
+<br>
+<div id="mediablock" class="row" ng-controller="SocialMediaCtrl">
+  <ul class="list-inline">
+    <li class ="media" ng-repeat="media in medias" ng-click="mediaClicked(media.url">
+      <span class="fa-stack fa-lg">
+          <i class="fa fa-stack-2x fa-circle-thin"></i>
+          <i class="fa fa-stack-2x fa-circle"></i>
+          <i class="fa fa-stack-1x {{media.icon}}"></i>
+      </span>
+    </li>
+  </ul>
+</div>
