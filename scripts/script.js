@@ -153,10 +153,10 @@ app.controller('SocialMediaCtrl', function($scope) {
         icon: 'fa-linkedin',
         display: 'LinkedIn'
     }, {
-        name: 'Github',
+        name: 'GitHub',
         url: 'https://github.com/Okma/',
         icon: 'fa-github',
-        display: 'Github'
+        display: 'GitHub'
     }, {
         name: 'Email',
         url: '',
