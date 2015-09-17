@@ -169,13 +169,11 @@ img[src="grey_line.png"] {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-.box-item:hover {
+.active {
     color: #0099FF;
-    background: white;
+    background: white; 
 }
-
-.box-item:hover>.fa-arrow-right {
+.active>.fa-arrow-right {
     padding-left: 15px;
 }
 

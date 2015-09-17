@@ -1,7 +1,7 @@
 <div class="row row-eq-height" ng-controller="ProjectCtrl">
     <div class="col-sm-1"></div>
     <ul class="nav nav-stacked col-sm-5">
-        <li class="box-item" ng-repeat="project in projects track by $index" ng-mouseover="changeDesc(project)">
+        <li class="box-item" ng-repeat="project in projects track by $index" ng-mouseover="changeDesc(project)" ng-class="{active : checkProject(project)}">
             {{project.name}}
             <i class="fa fa-arrow-right"></i>
         </li>

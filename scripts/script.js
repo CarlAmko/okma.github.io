@@ -9,7 +9,7 @@ $(document).ready(function() {
             "a designer.^1000",
             "Carl.^600"
         ],
-        typeSpeed: 50,
+        typeSpeed: 30,
         showCursor: true,
         callback: function() {
             $("#carl-circle").css("opacity", 1.0);
@@ -136,6 +136,10 @@ app.controller('ProjectCtrl', function($scope) {
     	$scope.projectDesc = project ? project.desc : "Hover over a project to learn more about it!";
         $scope.otherInfo = project ? project.url : "";
         $scope.otherTeam = project ? project.team : "None";
+        $scope.activeProject = project;
+    }
+    $scope.checkProject = function(checkProject) {
+        return checkProject == $scope.activeProject;
     }
 });
 
