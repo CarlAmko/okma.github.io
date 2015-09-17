@@ -7,11 +7,10 @@ $(document).ready(function() {
             "an engineer.^1000",
             "a developer.^1000",
             "a designer.^1000",
-            "Carl.^1000"
+            "Carl.^600"
         ],
         typeSpeed: 50,
         showCursor: true,
-        startDelay: 20,
         callback: function() {
             $("#carl-circle").css("opacity", 1.0);
             $("#carl-circle").css("margin-bottom", 0);
@@ -24,23 +23,22 @@ $(document).ready(function() {
         $('.boxx').each(function() {
 
             // The top of the box we're targeting.
-            var top_of_box = $(this).position().top;
+            var top_of_box = $(this).offset().top;
 
             // The bottom of the box we're targeting.
             var bottom_of_box = top_of_box + $(this).outerHeight();
-
-            var offset = $(this).outerHeight() / 2;
 
             // Top of visible window.
             var top_of_window = $(window).scrollTop();
 
             // Offset of -300, arbitrary delay distance.
-            var bottom_of_window = top_of_window + $(window).height() - offset;
+            var bottom_of_window = top_of_window + $(window).height();
 
             // 'Fade In' effect when our viewport approaches this box.
             if (bottom_of_window > bottom_of_box) {
                 $(this).animate({
-                    'opacity': '1'
+                    'opacity': '1',
+                    'margin-bottom': '0'
                 }, 500);
             }
 
@@ -51,6 +49,18 @@ $(document).ready(function() {
                 $('#menuBar').removeClass('header-menu-scroll');
             }
         });
+    });
+
+    // Link scrolling
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 600, 'swing');
     });
 
 });
@@ -83,32 +93,86 @@ app.controller('MainController', function($scope) {
 
 });
 
-app.controller('SocialMediaCtrl', function($scope) {
-	$scope.medias =
-	[
-		{
-			name: 'Facebook',
-			url: 'https://facebook.com/itsdefnotcarl/',
-			icon: 'fa-facebook'
-		},
-		{
-			name: 'LinkedIn',
-			url: 'https://www.linkedin.com/in/carlamko',
-			icon: 'fa-linkedin'
-		},
-		{
-			name: 'Github',
-			url: 'https://github.com/Okma/',
-			icon: 'fa-github'
-		},
-		{
-			name: 'Email',
-			url: 'https://mailto:c.amko@ufl.edu',
-			icon: 'fa-envelope-o'
-		}
-	];
+app.controller('ProjectCtrl', function($scope) {
+    $scope.projectDesc = "Hover over a project to learn more about it!";
 
-	$scope.mediaClicked = function(url) {
-		window.open(url, "_blank");
-	};
+    $scope.people = [{
+        name: "Stephanie Cruz",
+        url: "http://scruz2294.github.io/"
+    }, {
+        name: "Noah Presser",
+        url: "http://noahpresser.github.io/"
+    }, {
+        name: "Evan Clendenning",
+        url: "https://www.facebook.com/MuffinofChaos?fref=ts&ref=br_tf"
+    },  {
+        name: "Kevin Portuondo",
+        url: "https://www.linkedin.com/pub/kevin-portuondo/30/aaa/396"
+    }];
+
+    $scope.projects = [{
+        name: "Oracle Database Project with SQL",
+        desc: "One-semester team project concerning database design, implementation, and query using SQL.",
+        url: "",
+        team: [$scope.people[0]]
+    }, {
+        name: "Giftionary",
+        desc: "Web application game prototype with up to 6 simultaneous users.",
+        url: "https://gifti0nary.herokuapp.com",
+        team: ""
+    }, {
+        name: "Tyto Ecology",
+        desc: "Long-term project; educational ecology simulator for iOS.",
+        url: "https://immersedgames.com/games",
+        team: [$scope.people[1]]
+    }, {
+        name: "Tusk Textventure",
+        desc: "Text-based forge-your-own-path game with 8-bit style.",
+        url: "http://byteusgaming.com/Tusk-Textventure",
+        team: [$scope.people[3]]
+    }];
+
+    $scope.changeDesc = function(project) {
+    	$scope.projectDesc = project ? project.desc : "Hover over a project to learn more about it!";
+        $scope.otherInfo = project ? project.url : "";
+        $scope.otherTeam = project ? project.team : "None";
+    }
+});
+
+app.controller('SocialMediaCtrl', function($scope) {
+    $scope.showMedia = "";
+
+    $scope.medias = [{
+        name: 'Facebook',
+        url: 'https://facebook.com/itsdefnotcarl/',
+        icon: 'fa-facebook',
+        display: 'Facebook'
+    }, {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/carlamko',
+        icon: 'fa-linkedin',
+        display: 'LinkedIn'
+    }, {
+        name: 'Github',
+        url: 'https://github.com/Okma/',
+        icon: 'fa-github',
+        display: 'Github'
+    }, {
+        name: 'Email',
+        url: '',
+        icon: 'fa-envelope-o',
+        display: 'Email: c.amko@ufl.edu'
+    }];
+
+    $scope.mediaClicked = function(url) {
+        if (url) {
+            window.open(url, "_blank");
+        }
+    };
+    $scope.mediaHover = function(media) {
+    	$scope.showMedia = media.display;
+    };
+    $scope.mediaOut = function() {
+    	$scope.showMedia = "";
+    }
 });

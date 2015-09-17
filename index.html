@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!--Header Data-->
-	<meta charset="utf-8">
-	<!--Website Title-->
-	<title>Hi! I'm Carl!</title>
-	<!--Linking scripts and css-->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>	
-	<link rel="stylesheet" href ="css/style.css" >
-	<script src="scripts/jquery.min.js"></script>
-	<script src="scripts/angular/angular.js"></script>
-	<script type="text/javascript" src="/bower_components/typed.js/js/typed.js"></script>
-	<script src="scripts/script.js"></script>
+    <!--Header Data-->
+    <meta charset="utf-8">
+    <!--Website Title-->
+    <title>Hi! I'm Carl!</title>
+    <!--Linking scripts and css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/typed.js/js/typed.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 <!--Body-->
+
 <body ng-app='mySite' ng-controller="MainController as main">
-
-	<!--Intro-->
-	<div id="intro">
-		<div class="center-block">
-			<img id="carl-circle" src="me.jpg" alt="" class="img-circle">
-			<div class="typing">I'm <span></span></div>
-			<div class="sub-text">Web Designer / Game Programmer / App Developer</div>
-		</div>
-	</div>
-
-	<!--Menu at top of page-->
-	<ul id ="menuBar" class="list-inline center-block">
-		<li ng-repeat="link in links"><a target ="_self" ng-href="{{link.anchor}}">{{link.name}}</a></li>
-	</ul>
-	
-	<!--Main content box-->
-	<div id ="content" class ="container-fluid"> 
-		<div class="boxx container" ng-repeat="link in links">
-		<h6 id="{{link.name}}">{{link.name}}</h6>
-		<p><img src="grey_line.png" alt=""></p>
-		<ng-include src="link.url"></ng-include>
-		</div>
-	</div>
-	
-	<!--Footer Links-->
-	<div id="footer" class="container">
-		<ul id ="footerMenu" class="list-inline center-block text-center">
-			<li ng-repeat="link in links"><a target ="_self" ng-href="{{link.anchor}}">{{link.name}}</a></li> <br>
-			<li>&copy; Carl Amko, 2015</li>
-		</ul>
-		
-	</div>
+    <!--Intro-->
+    <div id="intro">
+        <div class="center-block">
+            <img id="carl-circle" src="me.jpg" alt="" class="img-circle">
+            <div class="typing">I'm <span></span></div>
+            <div class="sub-text">Web Designer / Game Programmer / App Developer</div>
+        </div>
+    </div>
+    <!--Menu at top of page-->
+    <ul id="menuBar" class="list-inline center-block">
+        <li ng-repeat="link in links"><a target="_self" ng-href="{{link.anchor}}">{{link.name}}</a></li>
+    </ul>
+    <!--Main content box-->
+    <div id="content" class="container-fluid">
+        <div class="boxx container" ng-repeat="link in links">
+            <h6 id="{{link.name}}">{{link.name}}</h6>
+            <p><img src="grey_line.png" alt=""></p>
+            <ng-include src="link.url"></ng-include>
+        </div>
+    </div>
+    <!--Footer Links-->
+    <div id="footer" class="container">
+        <ul id="footerMenu" class="list-inline center-block text-center">
+            <li ng-repeat="link in links"><a target="_self" ng-href="{{link.anchor}}">{{link.name}}</a></li>
+            <br>
+            <li>&copy; Carl Amko, 2015</li>
+        </ul>
+    </div>
 </body>
 
 </html>
