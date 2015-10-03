@@ -174,7 +174,7 @@ img[src="grey_line.png"] {
     background: white; 
 }
 .active>.fa-arrow-right {
-    padding-left: 15px;
+    padding-left: 8px;
 }
 
 .fa-arrow-right {
