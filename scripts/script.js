@@ -75,19 +75,19 @@ app.controller('MainController', function($scope) {
     // Content is loaded from external HTM files using ng-include.
     $scope.links = [{
         name: 'Home',
-        url: 'Home.htm',
+        url: './pages/Home.htm',
         anchor: "#Home"
     }, {
         name: 'Projects',
-        url: 'Projects.htm',
+        url: './pages/Projects.htm',
         anchor: "#Projects"
     }, {
         name: 'Expertise',
-        url: 'Other.htm',
+        url: './pages/Other.htm',
         anchor: "#Expertise"
     }, {
         name: 'Contact',
-        url: 'Contact.htm',
+        url: './pages/Contact.htm',
         anchor: "#Contact"
     }];
 
