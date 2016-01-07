@@ -74,21 +74,21 @@ app.controller('previewController', function($scope, $window) {
     $scope.previews = [
       {
         title: 'Tyto Ecology',
-        imgURL: '../img/tyto_ecology.png',
+        imgURL: '../img/tyto_ecology.jpg',
         link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
         blockSize: 'col-sm-12',
         desc: 'Create and master your own ecosystem.'
       },
       {
         title: 'Tyto Ecology',
-        imgURL: '../img/tyto_ecology.png',
+        imgURL: '../img/tyto_ecology.jpg',
         link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
         blockSize: 'col-sm-6',
         desc: 'Create and master your own ecosystem.'
       },
       {
         title: 'Tyto Ecology',
-        imgURL: '../img/tyto_ecology.png',
+        imgURL: '../img/tyto_ecology.jpg',
         link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
         blockSize: 'col-sm-6',
         desc: 'Create and master your own ecosystem.'
