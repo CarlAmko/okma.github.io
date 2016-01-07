@@ -70,11 +70,41 @@ app.controller('MainController', function($scope) {
 
 });
 
+app.controller('previewController', function($scope, $window) {
+    $scope.previews = [
+      {
+        title: 'Tyto Ecology',
+        imgURL: '../img/tyto_ecology.png',
+        link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
+        blockSize: 'col-sm-12',
+        desc: 'Create and master your own ecosystem.'
+      },
+      {
+        title: 'Tyto Ecology',
+        imgURL: '../img/tyto_ecology.png',
+        link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
+        blockSize: 'col-sm-6',
+        desc: 'Create and master your own ecosystem.'
+      },
+      {
+        title: 'Tyto Ecology',
+        imgURL: '../img/tyto_ecology.png',
+        link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
+        blockSize: 'col-sm-6',
+        desc: 'Create and master your own ecosystem.'
+      }
+    ];
+    $scope.go = function(URL) {
+      console.log(URL);
+      $window.open(URL, "_blank");
+    }
+});
+
 app.controller('aboutController', function($scope) {
   $scope.info = [
     {
       title: 'CODE',
-      icon: 'fa-terminal',
+      icon: 'fa-code',
       desc: 'Unique projects written completely from scratch.'
     },
     {
