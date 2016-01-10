@@ -24,7 +24,7 @@ $(document).ready(function() {
       var top_of_box = $(this).offset().top;
 
       // The bottom of the box we're targeting.
-      var bottom_of_box = top_of_box +  3 * $(this).outerHeight() / 5;
+      var bottom_of_box = top_of_box +  2 * $(this).outerHeight() / 5;
 
       // Top of visible window.
       var top_of_window = $(window).scrollTop();
@@ -80,18 +80,18 @@ app.controller('previewController', function($scope, $window) {
         desc: 'Create and master your own ecosystem.'
       },
       {
-        title: 'Tyto Ecology',
-        imgURL: '../img/tyto_ecology.jpg',
-        link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
+        title: 'Tusk Textventure',
+        imgURL: '../img/game1.png',
+        link: 'http://byteusgaming.com/Tusk-Textventure',
         blockSize: 'col-sm-6',
-        desc: 'Create and master your own ecosystem.'
+        desc: 'Action adventure in 8-bit style.'
       },
       {
-        title: 'Tyto Ecology',
-        imgURL: '../img/tyto_ecology.jpg',
-        link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
+        title: 'Hex Clock',
+        imgURL: '../img/hexclock.jpg',
+        link: 'http://hexclockswag.meteor.com',
         blockSize: 'col-sm-6',
-        desc: 'Create and master your own ecosystem.'
+        desc: 'Tell time in style.'
       }
     ];
     $scope.go = function(URL) {

@@ -18,7 +18,7 @@
 <br>
 <row ng-controller="previewController">
   <div ng-repeat="preview in previews" class="{{preview.blockSize}}">
-    <div class="preview-container center-block {{preview.css}}" ng-mouseenter="hovered = true" ng-mouseleave="hovered = false">
+    <div class="preview-container center-block" ng-mouseenter="hovered = true" ng-mouseleave="hovered = false">
       <div class="hover-box" ng-class="{visible: hovered}" ng-click="go(preview.link);">
         <p>{{preview.title}}</p>
         <div>{{preview.desc}}</div>
