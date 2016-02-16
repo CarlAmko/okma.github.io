@@ -75,7 +75,7 @@ app.controller('previewController', function($scope, $window) {
       {
         title: 'Tyto Ecology',
         imgURL: '../img/tyto_ecology.jpg',
-        link: 'http://steamcommunity.com/sharedfiles/filedetails/?id=581632488',
+        link: 'http://tyto-online.com/ecology/',
         blockSize: 'col-sm-12',
         desc: 'Create and master your own ecosystem.'
       },
