@@ -79,8 +79,10 @@ a, a:hover, a:focus, a:active {
   box-shadow: 1px 1px 12px black;
 }
 #content>.boxx {
-  padding-bottom: 50px;
+  padding: 0;
+  padding-bottom: 40px;
   padding-top: 20px;
+  margin: 0;
 }
 .boxx > * {
   position: relative;
@@ -107,7 +109,7 @@ h4 {
   color: #EEE;
 }
 #WhatIDo {
-  background: #00CCFF;
+  background: #0ca0c8;
 }
 #WhoAmI {
   background: white;

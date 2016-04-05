@@ -92,7 +92,21 @@ app.controller('previewController', function($scope, $window) {
         link: 'http://hexclockswag.meteor.com',
         blockSize: 'col-sm-6',
         desc: 'Tell time in style.'
-      }
+      },
+      {
+        title: 'Biotility',
+        imgURL: '../img/biotility.jpg',
+        link: 'https://biotility.herokuapp.com/',
+        blockSize: 'col-sm-6',
+        desc: 'Prepare for the BACE.'
+      },
+      {
+        title: 'Pic-A-Pun',
+        imgURL: '../img/PicAPun.jpg',
+        link: 'http://devpost.com/software/picapun',
+        blockSize: 'col-sm-6',
+        desc: 'Hackathon winner that generates puns from images.'
+      },
     ];
     $scope.go = function(URL) {
       console.log(URL);
