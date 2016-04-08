@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   // Typing on main page
   $('.typing>span').typed({
     strings: [
@@ -61,7 +62,13 @@ app.controller('MainController', function($scope) {
     id: 'WhatIDo',
     url: './pages/About.htm',
     anchor: "#WhatIDo"
-  }, {
+  },
+  {
+   title: 'What\'s happening',
+   id: 'NewsFeed',
+   url: './pages/News.htm',
+   anchor: "#NewsFeed"
+ }, {
     title: 'Contact',
     id: 'Contact',
     url: './pages/Contact.htm',
@@ -81,7 +88,7 @@ app.controller('previewController', function($scope, $window) {
       },
       {
         title: 'Tusk Textventure',
-        imgURL: '../img/game1.png',
+        imgURL: '../img/tusk-text-venture.jpg',
         link: 'http://byteusgaming.com/Tusk-Textventure',
         blockSize: 'col-sm-6',
         desc: 'Action adventure in 8-bit style.'
@@ -89,7 +96,7 @@ app.controller('previewController', function($scope, $window) {
       {
         title: 'Hex Clock',
         imgURL: '../img/hexclock.jpg',
-        link: 'http://hexclockswag.meteor.com',
+        link: 'http://hexclock.herokuapp.com/',
         blockSize: 'col-sm-6',
         desc: 'Tell time in style.'
       },
@@ -139,6 +146,15 @@ app.controller('aboutController', function($scope) {
   ];
 });
 
+app.controller('TwitterController', ["$scope", "$http", function($scope, $http) {
+
+  // array of tweets to store after HTTP request
+  $scope.tweets = [];
+
+  // add API calling later
+
+}]);
+
 app.controller('SocialMediaCtrl', function($scope) {
   $scope.showMedia = "";
 
@@ -149,6 +165,12 @@ app.controller('SocialMediaCtrl', function($scope) {
     url: 'https://facebook.com/itsdefnotcarl/',
     icon: 'fa-facebook',
     display: 'Facebook'
+  },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/CarlAmko',
+    icon: 'fa-twitter',
+    display: 'Twitter'
   }, {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/carlamko',

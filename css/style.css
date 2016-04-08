@@ -108,11 +108,19 @@ h4 {
   margin-top: 20px;
   color: #EEE;
 }
-#WhatIDo {
-  background: #0ca0c8;
-}
 #WhoAmI {
   background: white;
+}
+#WhatIDo {
+  background: #0eb7e4;
+  padding-bottom: 0 !important;
+}
+#NewsFeed {
+  background: #333;
+}
+#NewsFeed > h6, #Contact > h6 {
+  color: white !important;
+  /*text-shadow: 1px 1px 8px black;*/
 }
 #Contact {
   background: #555;
@@ -169,9 +177,25 @@ h4 {
 .hover-box > div {
   font-size: 40px;
 }
-.hover-box:hover {}
 #mediablock {
   text-align: center;
+  width: 100%;
+}
+.news-feed {
+  margin-top: 20px;
+  width: 80%;
+}
+.twitter-tweet {
+  box-shadow: 2px 2px 8px black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 20px !important;
+}
+.twitter-tweet:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .social-img {
   margin-left: auto;
@@ -219,7 +243,7 @@ h6 {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.fa-github:hover, .fa-facebook:hover, .fa-envelope-o:hover, .fa-linkedin:hover {
+.fa-github:hover, .fa-facebook:hover, .fa-twitter:hover, .fa-envelope-o:hover, .fa-linkedin:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #444;
@@ -229,7 +253,7 @@ h6 {
   background: black;
 }
 #footer > div {
-  height: 50px;
+  height: 40px;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
 }

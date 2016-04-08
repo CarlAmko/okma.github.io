@@ -2,47 +2,48 @@
 <html>
 
 <head>
-  <!--Header Data-->
-  <meta charset="utf-8">
-  <!--Website Title-->
-  <title>Hi! I'm Carl!</title>
-  <!--Linking scripts and css-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="img/favicon.ico" type="image/icon">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  <script type="text/javascript" src="/bower_components/typed.js/js/typed.js"></script>
-  <script src="scripts/script.js"></script>
+    <!--Header Data-->
+    <meta charset="utf-8">
+    <meta name="twitter:widgets:theme" content="light">
+    <!--Website Title-->
+    <title>Hi! I'm Carl!</title>
+    <!--Linking scripts and css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/typed.js/js/typed.js"></script>
+    <script src="scripts/script.js"></script>
 </head>
 
 <!--Body-->
 
 <body ng-app='mySite' ng-controller="MainController as main">
-  <!--Intro-->
-  <div id="intro">
-    <div class="center-block vertical-center">
-      <img id="carl-circle" src="./img/me.jpg" alt="" class="img-circle">
-      <div class="typing">I'm
-        <span></span>
-      </div>
-      <div class="sub-text">Web Designer / Game Programmer / App Developer</div>
+    <!--Intro-->
+    <div id="intro">
+        <div class="center-block vertical-center">
+            <img id="carl-circle" src="./img/me.jpg" alt="" class="img-circle">
+            <div class="typing">I'm
+                <span></span>
+            </div>
+            <div class="sub-text">Web Designer / Game Programmer / App Developer</div>
+        </div>
     </div>
-  </div>
-  <!--Main content box-->
-  <div id="content">
-    <div id="{{link.id}}" class="boxx container-fluid" ng-repeat="link in links">
-      <h6>{{link.title}}</h6>
-      <div ng-include ="link.url"></div>
-    </div>
-    <!--Footer Links-->
-    <div id="footer">
-      <div class="center-block" style="color: white;">&copy; Carl Amko, 2015-16.</div>
-    </div>
+    <!--Main content box-->
+    <div id="content">
+        <div id="{{link.id}}" class="boxx container-fluid" ng-repeat="link in links">
+            <h6>{{link.title}}</h6>
+            <div ng-include="link.url"></div>
+        </div>
+        <!--Footer Links-->
+        <div id="footer">
+            <div class="center-block" style="color: white;">&copy; Carl Amko, 2015-16.</div>
+        </div>
 </body>
 
 </html>
