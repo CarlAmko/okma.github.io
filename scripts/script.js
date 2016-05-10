@@ -3,9 +3,9 @@ $(document).ready(function() {
   // Typing on main page
   $('.typing>span').typed({
     strings: [
-      "an engineer.^1000",
       "a developer.^1000",
-      "glad you're here!^1000",
+      "a designer.^1000",
+      "an engineer.^1000",
       "Carl.^600"
     ],
     typeSpeed: 30,
@@ -116,7 +116,6 @@ app.controller('previewController', function($scope, $window) {
       },
     ];
     $scope.go = function(URL) {
-      console.log(URL);
       $window.open(URL, "_blank");
     }
 });
@@ -136,12 +135,12 @@ app.controller('aboutController', function($scope) {
     {
       title: 'TEST',
       icon: 'fa-bar-chart',
-      desc: 'Results-driven testing to optimize development time and quality.'
+      desc: 'Results-driven testing to optimize development.'
     },
     {
       title: 'ADAPT',
       icon: 'fa-bolt',
-      desc: 'Quickly learn and adapt modern technologies.'
+      desc: 'Quickly learn and adapt new technologies.'
     }
   ];
 });
@@ -159,7 +158,6 @@ app.controller('SocialMediaCtrl', function($scope) {
   $scope.showMedia = "";
 
   // Scoped array of social media info
-  // Could use a JSON, too lazy ATM.
   $scope.medias = [{
     name: 'Facebook',
     url: 'https://facebook.com/itsdefnotcarl/',

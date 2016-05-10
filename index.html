@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/typed.js/js/typed.js"></script>
+    <script type="text/javascript" src="./bower_components/typed.js/js/typed.js"></script>
     <script src="scripts/script.js"></script>
 </head>
 
@@ -31,13 +31,13 @@
             <div class="typing">I'm
                 <span></span>
             </div>
-            <div class="sub-text">Web Designer / Game Programmer / App Developer</div>
+            <div class="sub-text">Web Developer / Designer / Software Engineer</div>
         </div>
     </div>
     <!--Main content box-->
     <div id="content">
         <div id="{{link.id}}" class="boxx container-fluid" ng-repeat="link in links">
-            <h6>{{link.title}}</h6>
+            <h6 class="block-title">{{link.title}}</h6>
             <div ng-include="link.url"></div>
         </div>
         <!--Footer Links-->
