@@ -64,7 +64,7 @@ app.controller('MainController', function($scope) {
     anchor: "#WhatIDo"
   },
   {
-   title: 'What\'s happening',
+   title: '',
    id: 'NewsFeed',
    url: './pages/News.htm',
    anchor: "#NewsFeed"
@@ -181,9 +181,9 @@ app.controller('SocialMediaCtrl', function($scope) {
     display: 'GitHub'
   }, {
     name: 'Email',
-    url: '',
+    url: 'mailto:carl@carlamko.me',
     icon: 'fa-envelope-o',
-    display: 'Email: c.amko@ufl.edu'
+    display: 'Email: carl@carlamko.me'
   }];
 
   $scope.mediaClicked = function(url) {
