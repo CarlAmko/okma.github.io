@@ -112,9 +112,11 @@ a, a:hover, a:focus, a:active {
     margin-top: 20px;
     color: #EEE;
 }
-
+#WhoAmI {
+    background: white;
+}
 #WhatIDo {
-    background: #fff;
+    background: #0eb7e4;
     padding-bottom: 0 !important;
 }
 #NewsFeed {
