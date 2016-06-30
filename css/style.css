@@ -133,6 +133,11 @@ a, a:hover, a:focus, a:active {
 .col-sm-6, .col-sm-12 {
     padding: 0;
 }
+.twitter-box {
+  margin: 0;
+  /*margin-left: 3px;
+  margin-right: 3px;*/
+}
 .preview-container {
     position: relative;
     z-index: 9;

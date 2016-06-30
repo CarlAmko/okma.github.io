@@ -64,7 +64,7 @@ app.controller('MainController', function($scope) {
     anchor: "#WhatIDo"
   },
   {
-   title: '',
+   title: 'What\'s Happening',
    id: 'NewsFeed',
    url: './pages/News.htm',
    anchor: "#NewsFeed"
