@@ -1,5 +1,9 @@
+html {
+    height: 100%;
+}
 body {
-  background: rgb(199, 199, 199);
+    height: 99.7%;
+    background: rgb(199, 199, 199);
 }
 .blogs {
 }

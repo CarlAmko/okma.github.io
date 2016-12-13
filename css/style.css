@@ -22,8 +22,8 @@ a, a:hover, a:focus, a:active {
     height: 100%;
     z-index: -1;
     background-repeat: no-repeat;
-    -webkit-filter: blur(8px);
-    filter: blur(8px);
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
     -webkit-transition: all 0.7 ease;
     transition: all 0.7 ease;
 }
@@ -34,6 +34,14 @@ a, a:hover, a:focus, a:active {
     color: white;
     font-weight: 700;
     text-shadow: 3px 3px 3px black;
+}
+.corner-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 80px;
+  width: 80px;
+  border: none;
 }
 .vertical-center {
     position: relative;
@@ -52,7 +60,7 @@ a, a:hover, a:focus, a:active {
 }
 .sub-text {
     opacity: 0;
-    color: #00CCFF;
+    color: #48a8f7;
     font-size: 32px;
     -webkit-transition: all 0.7 ease;
     transition: all 0.7 ease;
@@ -92,17 +100,19 @@ a, a:hover, a:focus, a:active {
 .item-title:after {
     content: '';
     display: block;
-    width: 15%;
+    width: 10%;
     height: 1px;
     background-color: #111;
     margin: auto;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-bottom: 20px;
+    box-shadow: 1px 1px 1px black;
 }
 .item-title {
     font-size: 36px;
     font-weight: 500;
     margin-top: 20px;
+    color: #000000;
 }
 .item-desc {
   font-size: 22px;
@@ -116,7 +126,7 @@ a, a:hover, a:focus, a:active {
     background: white;
 }
 #WhatIDo {
-    background: #0eb7e4;
+    background: #48a8f7;
     padding-bottom: 0 !important;
 }
 #NewsFeed {
@@ -252,7 +262,8 @@ p>img {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.fa-github:hover, .fa-facebook:hover, .fa-twitter:hover, .fa-envelope-o:hover, .fa-linkedin:hover {
+.fa-github:hover, .fa-facebook:hover, .fa-twitter:hover,
+.fa-envelope-o:hover, .fa-linkedin:hover, .fa-medium:hover {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: #444;
