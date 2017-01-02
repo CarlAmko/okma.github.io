@@ -1,0 +1,306 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: black;
+}
+a, a:hover, a:focus, a:active {
+    color: inherit;
+}
+.maintain-height {
+    height: 2vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#intro:before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/bg.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    -webkit-transition: all 0.7 ease;
+    transition: all 0.7 ease;
+}
+#intro {
+    height: 100vh;
+    font-size: 46px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px black;
+}
+.corner-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+  border: none;
+}
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.typing {
+    font-size: 60px;
+}
+.invisible {
+    opacity: 0;
+}
+.visible {
+    opacity: 1.0 !important;
+}
+.sub-text {
+    opacity: 0;
+    color: #48a8f7;
+    font-size: 32px;
+    -webkit-transition: all 0.7 ease;
+    transition: all 0.7 ease;
+}
+.center-block {
+    text-align: center;
+}
+#content {
+    position: relative;
+    height: auto;
+    font-size: 24px;
+    color: #111;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 1px 1px 10px black;
+}
+#carl-circle {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    -webkit-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+    opacity: 0;
+    box-shadow: 1px 1px 12px black;
+}
+#content>.boxx {
+    padding: 0;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin: 0;
+}
+.boxx > * {
+    position: relative;
+    opacity: 0;
+    margin-left: 30px;
+}
+.item-title:after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 1px;
+    background-color: #111;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+.item-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #000000;
+}
+.item-desc {
+  font-size: 22px;
+  color: #222;
+}
+.fa.fa-lg, .fa.fa-2x {
+    margin-top: 20px;
+    color: #EEE;
+}
+#WhoAmI {
+    background: white;
+}
+#WhatIDo {
+    background: #48a8f7;
+    padding-bottom: 0 !important;
+}
+#NewsFeed {
+    background: #333;
+}
+#NewsFeed > h6, #Contact > h6 {
+    color: white !important;
+    /*text-shadow: 1px 1px 8px black;*/
+}
+#Contact {
+    background: #555;
+    color: white;
+}
+.col-sm-6, .col-sm-12 {
+    padding: 0;
+}
+.twitter-box {
+  margin: 0;
+  /*margin-left: 3px;
+  margin-right: 3px;*/
+}
+.preview-container {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 7px #222;
+}
+.preview-container > img {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.preview-container:hover > img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    font-family: 'Montserrat';
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.hover-box > * {
+    position: relative;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.hover-box > p {
+    font-size: 60px;
+    font-weight: 600;
+}
+.hover-box > div {
+    font-size: 40px;
+}
+#mediablock {
+    text-align: center;
+    width: 100%;
+}
+.news-feed {
+    margin-top: 20px;
+    width: 80%;
+}
+.twitter-tweet {
+    box-shadow: 2px 2px 8px black;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 20px !important;
+}
+.twitter-tweet:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.social-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    height: 32px;
+}
+@media screen and (min-width: 768px) {
+    .equal, .equal > div[class*='col-'] {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+}
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+p>img {
+    box-shadow: 4px 3px 12px black;
+}
+.block-title {
+    font-size: 70px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Asap';
+    text-align: center;
+    color: #111 !important;
+}
+.media:hover>span>.fa-circle {
+    color: white;
+}
+.media {
+    margin: 10px;
+}
+.fa-circle {
+    color: #444;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.fa-github:hover, .fa-facebook:hover, .fa-twitter:hover,
+.fa-envelope-o:hover, .fa-linkedin:hover, .fa-medium:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: #444;
+}
+#footer {
+    font-size: 24px;
+    background: black;
+}
+#footer > div {
+    height: 40px;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+}
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,22 @@
+<div class="container center-block" ng-controller="aboutController">
+  <row>
+    <div class="col-sm-3" ng-repeat="item in info">
+      <i class="fa fa-2x {{item.icon}}"></i>
+      <h4 class="item-title">{{item.title}}</h4>
+      <p class="item-desc">{{item.desc}}</p>
+    </div>
+  </row>
+</div>
+<br>
+
+<row ng-controller="previewController">
+  <div ng-repeat="preview in previews" class="{{preview.blockSize}}">
+    <div class="preview-container center-block" ng-mouseenter="hovered = true" ng-mouseleave="hovered = false">
+      <div class="hover-box" ng-class="{visible: hovered}" ng-click="go(preview.link);">
+        <p>{{preview.title}}</p>
+        <div>{{preview.desc}}</div>
+      </div>
+      <img ng-src="{{preview.imgURL}}" alt="{{preview.title}}" width="100%" height="600px"/>
+    </div>
+  </div>
+</row>

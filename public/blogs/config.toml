@@ -1,0 +1,9 @@
+baseurl = "http://carlamko.me/"
+title = "Blogs"
+languageCode = "en-us"
+theme = "hugo-theme-bleak"
+
+[params]
+  logo = ""
+  cover = "http://wallpapercave.com/wp/WaFOpxG.jpg"
+  disqus_identifier = "carlamko"
