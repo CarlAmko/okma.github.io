@@ -17,13 +17,16 @@ $color-gray-50: #737580;
 $color-gray-40: #595B66;
 $color-gray-25: #363740;
 $color-gray-15: #1F2026;
+$color-orange: #EB8F2F;
+$color-blue: #068FF2;
+$color-light-blue: #06BAF2;
 /*
 	Change the accent colors here. Make sure they work on light an dark
 	backgrounds or as background color for light and dark text color
 */
-$color-primary-default: $color-green-85;
+$color-primary-default: $color-blue;
 /* Light */
-$color-primary-active: $color-green-72;
+$color-primary-active: $color-light-blue;
 /* Dark */
 /* ==========================================================================
    Basics
@@ -1045,9 +1048,14 @@ body {
         position: absolute;
         top: 20px;
         left: 20px;
-        
+
         i {
             color: white;
+            transition: all 0.2s ease;
+
+            &:hover {
+              transform: scale(1.2);
+            }
         }
 
         .fa-arrow-circle-left {
@@ -1069,27 +1077,57 @@ body {
         }
     }
 
+    .post-author {
+        font-weight: 400;
+        font-size: 1.5em;
+        color: #000;
+        margin: 0.25em 0 1em;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            border-bottom: 2px solid $color-primary-default;
+        }
+    }
+
     .post-image-active {
         display: block;
         margin: 0;
         padding: 0;
-        height: 60%;
 
         img {
             display: block;
             width: 100%;
-            height: auto;
+            height: 100%;
+            max-height: 600px;
             margin: 0;
-            padding: 0 0 0.5em;
         }
     }
 
     .post-meta {
         display: block;
-        font-size: 0.75em;
+        font-size: 1.25em;
         line-height: 1.334em;
         font-weight: 400;
-        margin-bottom: 1.334em;
+        margin-bottom: 0.9em;
+
+        .post-author {
+            margin-bottom: 0.2em;
+            font-weight: 800;
+            color: $color-gray-40;
+
+            a {
+                color: $color-primary-default;
+            }
+        }
+    }
+
+    .post-meta-active {
+        @extend .post-meta;
+        font-size: 2vmax;
 
         a {
             color: inherit;
@@ -1101,6 +1139,12 @@ body {
                 border-bottom-color: rgba(0,0,0,0.4);
             }
         }
+
+        .post-author {
+            &:after {
+              width: 0%;
+            }
+        }
     }
 
     .post-title {
@@ -1110,7 +1154,7 @@ body {
         line-height: 1.375em;
         font-weight: 800;
         text-indent: -1px;
-        margin: 0.25em 0 0.75em;
+        margin: 0 0 1.2em;
 
         a {
             text-decoration: none;
@@ -1119,24 +1163,14 @@ body {
         }
     }
 
+    .post-title-fixed {
+        @extend .post-title;
+        margin: 0 0 2.5em;
+    }
+
     .post-header {
         padding: 3em 0 0;
         margin-bottom: 2.5em;
-    }
-
-    .post-author {
-        font-weight: 200;
-        color: #000;
-
-        :after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -0.334em;
-            width: 1em;
-            margin-bottom: -2px;
-            border-bottom: 4px solid $color-primary-default;
-        }
     }
 }
 
@@ -1287,7 +1321,8 @@ body {
             }
 
             .post-author,
-            .post-title {
+            .post-title,
+            .post-title-fixed {
                 color: #fff;
             }
 
@@ -1369,9 +1404,8 @@ body {
             }
         }
 
-        .post-meta {}
-
-        .post-title {
+        .post-title,
+        .post-title-fixed {
             font-size: 1.5em;
             line-height: 1.167em;
         }
@@ -1765,7 +1799,7 @@ body {
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: $color-green-85;
+    border-top-color: $color-primary-default;
     -webkit-animation: spin 2s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 2s linear infinite;
@@ -1781,7 +1815,7 @@ body {
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: $color-green-72;
+    border-top-color: $color-primary-active;
     -webkit-animation: spin 3s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 3s linear infinite;

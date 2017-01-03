@@ -10,7 +10,8 @@
 </div>
 </section>
 
-<script async src="./js/main.js"></script>
+<script async src="/js/main.js"></script>
+<noscript><link rel="stylesheet" href="/css/main.css"></noscript>
 
 {{ if .Site.Params.googleAnalyticsUserID }} {{with .Site.Params.googleAnalyticsUserID }}
 <script>
@@ -50,8 +51,6 @@
     })(window, document, 'script', 'dataLayer', '{{ . }}');
 </script>
 {{ end }} {{ end }}
-
-<noscript><link rel="stylesheet" href="./css/main.css"></noscript>
 </body>
 
 </html>

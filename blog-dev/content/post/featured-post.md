@@ -2,7 +2,9 @@
 date = "2017-01-01"
 title = "Featured Post With a long title like this"
 slug = "featured-post"
+name = "featured-post"
 tags = ["tag1","tag2"]
+category = "Example"
 image = "http://www.w3schools.com/css/trolltunga.jpg"
 comments = true
 share = true
