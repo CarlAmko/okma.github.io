@@ -10,7 +10,11 @@
 </div>
 </section>
 
-<script async src="/blog/js/main.js"></script>
+{{ if .Site.Params.dev }}
+<script async src="/js/main.js"></script>
+{{else}}
+<script async src="{{ .Site.BaseURL }}/js/main.js"></script>
+{{end}}
 {{ if .Site.Params.googleAnalyticsUserID }} {{with .Site.Params.googleAnalyticsUserID }}
 <script>
     (function(i, s, o, g, r, a, m) {

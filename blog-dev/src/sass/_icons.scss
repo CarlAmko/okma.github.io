@@ -1,10 +1,11 @@
+$baseURL: 'http://carlamko.me/blog';
 @font-face {
   font-family: 'icons';
-  src: url('../fonts/icons.eot?9273991');
-  src: url('../fonts/icons.eot?9273991#iefix') format('embedded-opentype'),
-       url('../fonts/icons.woff?9273991') format('woff'),
-       url('../fonts/icons.ttf?9273991') format('truetype'),
-       url('../fonts/icons.svg?9273991#icons') format('svg');
+  src: url($baseURL + '/fonts/icons.eot?9273991');
+  src: url($baseURL + '/fonts/icons.eot?9273991#iefix') format('embedded-opentype'),
+       url($baseURL + '/fonts/icons.woff?9273991') format('woff'),
+       url($baseURL + '/fonts/icons.ttf?9273991') format('truetype'),
+       url($baseURL + '/fonts/icons.svg?9273991#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }

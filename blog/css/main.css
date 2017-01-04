@@ -49,8 +49,8 @@
   src: local("Inconsolata Bold"), local("Inconsolata-Bold"), url("//fonts.gstatic.com/s/inconsolata/v12/AIed271kqQlcIRSOnQH0yTqR_3kx9_hJXbbyU8S6IN0.woff") format("woff"); }
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot?9273991");
-  src: url("../fonts/icons.eot?9273991#iefix") format("embedded-opentype"), url("../fonts/icons.woff?9273991") format("woff"), url("../fonts/icons.ttf?9273991") format("truetype"), url("../fonts/icons.svg?9273991#icons") format("svg");
+  src: url("http://carlamko.me/blog/fonts/icons.eot?9273991");
+  src: url("http://carlamko.me/blog/fonts/icons.eot?9273991#iefix") format("embedded-opentype"), url("http://carlamko.me/blog/fonts/icons.woff?9273991") format("woff"), url("http://carlamko.me/blog/fonts/icons.ttf?9273991") format("truetype"), url("http://carlamko.me/blog/fonts/icons.svg?9273991#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */

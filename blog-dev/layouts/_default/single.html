@@ -6,7 +6,7 @@
 
 		<!-- Return to home -->
 		<div class="go-home">
-			<a href="/"><i class="fa fa-arrow-circle-left"></i></a>
+			<a {{ if .Site.Params.dev }}href="/"{{else}}href="{{ $baseurl }}"{{end}}><i class="fa fa-arrow-circle-left"></i></a>
 		</div>
 
 		<!-- Cover Image -->
