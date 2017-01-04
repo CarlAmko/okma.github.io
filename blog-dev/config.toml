@@ -6,4 +6,4 @@ theme = "hugo-theme-bleak"
   logo = ""
   cover = "http://wallpapercave.com/wp/WaFOpxG.jpg"
   disqus_identifier = "carlamko"
-  dev = true
+  dev = false
