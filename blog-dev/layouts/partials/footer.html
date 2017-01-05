@@ -10,6 +10,13 @@
 </div>
 </section>
 
+<script>
+var b = document.createElement("link");
+b.href = "{{ .Site.BaseURL }}/css/main.css", b.rel = "stylesheet", b.type = "text/css", b.media = "bogus", b.onload = function() {
+    b.media = "all"
+}, document.getElementsByTagName("head")[0].appendChild(b);
+</script>
+
 {{ if .Site.Params.dev }}
 <script async src="/js/main.js"></script>
 {{else}}

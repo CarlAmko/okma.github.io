@@ -4990,10 +4990,7 @@
             o = !1,
             p = a("#ajax-container");
         return a(document).ready(function() {
-            var b = document.createElement("link");
-            b.href = "/css/main.css", b.rel = "stylesheet", b.type = "text/css", b.media = "bogus", b.onload = function() {
-                b.media = "all"
-            }, document.getElementsByTagName("head")[0].appendChild(b), a("#loader-wrapper").fadeOut(300), a("#wrapper").fadeIn(800)
+             a("#loader-wrapper").fadeOut(300), a("#wrapper").fadeIn(800)
         }), !!n.enabled && (n.Adapter.bind(window, "statechange", function() {
             k.addClass("loading");
             var b = n.getState();
