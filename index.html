@@ -2,12 +2,20 @@
 <html>
 
 <head>
+
+    <!-- HTTPS redirect -->
+    <script type="text/javascript">
+        var host = "carlamko.me";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script>
+
     <!--Header Data-->
     <meta charset="utf-8">
     <meta name="twitter:widgets:theme" content="light">
 
     <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
-    
+
     <!--Website Title-->
     <title>Carl Amko</title>
 
@@ -41,6 +49,7 @@
 </head>
 
 <!--Body-->
+
 <body ng-app='mySite' ng-controller="MainController as main">
     <!--Intro-->
     <div id="intro">
