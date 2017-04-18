@@ -91,18 +91,10 @@ app.controller('previewController', function($scope, $window) {
         }, {
             title: 'Tyto Ecology',
             imgURL: '../img/tyto_ecology.jpg',
-            link: 'http://store.steampowered.com/app/453750/',
+            link: 'https://www.tytoonline.com/tyto_ecology/',
             blockSize: 'col-sm-6',
             desc: 'Create and balance your own ecosystem.'
-        },
-        // {
-        //   title: 'Tusk Textventure',
-        //   imgURL: '../img/tusk-text-venture.jpg',
-        //   link: 'http://byteusgaming.com/Tusk-Textventure',
-        //   blockSize: 'col-sm-6',
-        //   desc: 'Action adventure in 8-bit style.'
-        // },
-        {
+        }, {
             title: 'Hex Clock',
             imgURL: '../img/hexclock.jpg',
             link: 'http://hexclock.herokuapp.com/',
@@ -163,7 +155,7 @@ app.controller('SocialMediaCtrl', function($scope) {
     // Scoped array of social media info
     $scope.medias = [{
         name: 'Facebook',
-        url: 'https://facebook.com/itsdefnotcarl/',
+        url: 'https://www.facebook.com/Amko.Carl',
         icon: 'fa-facebook',
         display: 'Facebook'
     }, {
@@ -183,7 +175,7 @@ app.controller('SocialMediaCtrl', function($scope) {
         display: 'GitHub'
     }, {
         name: 'Medium',
-        url: 'https://medium.com/@CarlAmko',
+        url: 'https://medium.com/theimpulse',
         icon: 'fa-medium',
         display: 'Medium'
     }, {
