@@ -2,9 +2,19 @@
 <html>
 
 <head>
+
+    <!-- HTTPS redirect -->
+    <script type="text/javascript">
+        var host = "carlamko.me";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script>
+
     <!--Header Data-->
     <meta charset="utf-8">
     <meta name="twitter:widgets:theme" content="light">
+
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
     <!--Website Title-->
     <title>Carl Amko</title>
@@ -15,10 +25,16 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="img/favicon.ico" type="image/icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- End CSS -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -30,22 +46,22 @@
             ':35729/livereload.js?snipver=1"></' + 'script>')
     </script> -->
     <script src="scripts/script.js"></script>
-    <!-- End Scripts -->
 </head>
 
 <!--Body-->
+
 <body ng-app='mySite' ng-controller="MainController as main">
     <!--Intro-->
     <div id="intro">
         <!-- Corner Image -->
-        <img class="corner-img" src="./img/brand_logo_white_tiny.png">
+        <img class="corner-img" src="./img/favicon/brand_logo_white_tiny.png">
         <!-- Hero Section -->
         <div class="center-block vertical-center">
             <img id="carl-circle" src="./img/me.jpg" alt="" class="img-circle">
             <div class="typing">I'm
                 <span></span>
             </div>
-            <div class="sub-text">Abiding Geek // Novice Writer // Lifelong Learner</div>
+            <div class="sub-text">Abiding Geek // Passionate Writer // Lifelong Learner</div>
         </div>
     </div>
 
