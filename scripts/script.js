@@ -5,7 +5,7 @@ $(document).ready(function() {
         strings: [
             "ambitious.^600",
             "energetic.^600",
-            "a developer.^600",
+            "an engineer.^600",
             "Carl.^450"
         ],
         typeSpeed: 30,
@@ -182,7 +182,7 @@ app.controller('SocialMediaCtrl', function($scope) {
         name: 'Email',
         url: 'mailto:carl@carlamko.me',
         icon: 'fa-envelope-o',
-        display: 'Email: carl@carlamko.me'
+        display: 'carl@carlamko.me'
     }];
 
     $scope.mediaClicked = function(url) {
