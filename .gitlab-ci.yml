@@ -12,8 +12,8 @@ cache:
 before_script:
   - npm install
 
-deploy:
+pages:
     only:
     - master
     script:
-    - node server.js
+    - npm run build

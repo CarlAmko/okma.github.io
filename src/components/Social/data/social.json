@@ -1,0 +1,31 @@
+[{
+    "name": "Facebook",
+    "url": "https://www.facebook.com/Amko.Carl",
+    "icon": "fa-facebook",
+    "display": "Facebook"
+}, {
+    "name": "Twitter",
+    "url": "https://twitter.com/CarlAmko",
+    "icon": "fa-twitter",
+    "display": "Twitter"
+}, {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/carlamko",
+    "icon": "fa-linkedin",
+    "display": "LinkedIn"
+}, {
+    "name": "GitHub",
+    "url": "https://github.com/Okma/",
+    "icon": "fa-github",
+    "display": "GitHub"
+}, {
+    "name": "Medium",
+    "url": "https://medium.com/theimpulse",
+    "icon": "fa-medium",
+    "display": "Medium"
+}, {
+    "name": "Email",
+    "url": "mailto:carl@carlamko.me",
+    "icon": "fa-envelope-o",
+    "display": "carl@carlamko.me"
+}]

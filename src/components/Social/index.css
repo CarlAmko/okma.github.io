@@ -1,0 +1,20 @@
+.social-icon {
+    display: inline;
+}
+.fa-stack {
+    margin: 12px;
+}
+.fa {
+    color: #FFF;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid #FFF;
+    border-radius: 999px;
+}
+.fa-github:hover, .fa-facebook:hover, .fa-twitter:hover,
+.fa-envelope-o:hover, .fa-linkedin:hover, .fa-medium:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: #444;
+    border: 1px solid #444;
+}

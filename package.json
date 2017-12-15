@@ -1,18 +1,28 @@
 {
-  "name": "Carl Amko Personal Website",
-  "version": "1.0.0",
+  "name": "carl_amko_website",
+  "version": "2.0.0",
   "description": "Personal website for Carl Amko",
+  "main": "index.js",
   "dependencies": {
-    "express": "~4.13.x",
-    "livereload": "^0.6.0",
-    "mongoose": "^4.4.12",
-    "pg": "4.x"
+    "classnames": "^2.2.5",
+    "express": "^4.16.2",
+    "log": "^1.4.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-router": "^4.2.0",
+    "react-scripts": "^1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "engines": {
-    "node": "0.12.x"
+    "node": "4.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Okma/okma.github.io"
+    "url": "https://gitlab.com/camko/camko.gitlab.io"
   }
 }
