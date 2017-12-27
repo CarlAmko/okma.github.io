@@ -10,20 +10,22 @@ cache:
   - node_modules/
 
 stages:
-  - pages
+  - build
   - deploy
 
 before_script:
   - npm install
   - npm install -g serve
 
-pages:
-    only:
-    - master
-    script:
-    - npm run build
+build:
+  stage: build
+  only:
+  - master
+  script:
+  - npm run build
 
 deploy:
+  stage: deploy  
   only:
   - master
   script:
