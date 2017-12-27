@@ -11,9 +11,17 @@ cache:
 
 before_script:
   - npm install
+  - npm install -g serve
 
 pages:
     only:
     - master
     script:
     - npm run build
+
+deploy:
+  only:
+  - master
+  script:
+  - serve -s build
+ 
