@@ -9,6 +9,10 @@ cache:
   paths:
   - node_modules/
 
+stages:
+  - pages
+  - deploy
+
 before_script:
   - npm install
   - npm install -g serve
