@@ -7,11 +7,9 @@ export default class Social extends Component {
 
     parseMedia = (media) => {
         return (
-            <div className="social-icon">
+            <div key={media.name} className="social-icon">
                 <a target="_blank" href={media.url}>
-                <span className={classNames("fa-stack")}>
-                    <i className={classNames("fa", "fa-stack-1x", media.icon)} />
-                </span>
+                    <i className={classNames("fa", "fa-sm", "fa-social", media.icon)} />
                 </a>
             </div>
         );

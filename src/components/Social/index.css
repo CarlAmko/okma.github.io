@@ -1,20 +1,30 @@
 .social-icon {
     display: inline;
+    font-size: 40px;
 }
-.fa-stack {
-    margin: 12px;
-}
-.fa {
+
+.fa-social {
+    margin-top: 16px;
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
     color: #FFF;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
     border: 1px solid #FFF;
     border-radius: 999px;
-}
-.fa-github:hover, .fa-facebook:hover, .fa-twitter:hover,
-.fa-envelope-o:hover, .fa-linkedin:hover, .fa-medium:hover {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: #444;
-    border: 1px solid #444;
+}
+
+.fa-github:hover,
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-envelope-o:hover,
+.fa-linkedin:hover,
+.fa-medium:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: rgb(45, 173, 247);
+    border: 1px solid rgb(45, 173, 247);
 }
