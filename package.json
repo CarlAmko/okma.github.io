@@ -4,8 +4,6 @@
   "description": "Personal website for Carl Amko",
   "main": "index.js",
   "dependencies": {
-    "classnames": "^2.2.5",
-    "express": "^4.16.2",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-scripts": "^1.0.17"
@@ -17,7 +15,7 @@
     "eject": "react-scripts eject"
   },
   "engines": {
-    "node": "4.0.0"
+    "node": "4.0.0^"
   },
   "repository": {
     "type": "git",

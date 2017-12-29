@@ -1,2 +1,2 @@
-# okma.github.io
-Personal Website hosted on Github
+# camko.gitlab.io
+Personal Website hosted on Gitlab
