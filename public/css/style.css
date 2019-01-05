@@ -4,8 +4,3 @@ a:focus,
 a:active {
     color: inherit;
 }
-
-#root {
-    margin: 0;
-    padding: 0;
-}

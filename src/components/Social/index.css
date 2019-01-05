@@ -11,7 +11,9 @@
     margin-bottom: 24px;
     margin-left: 12px;
     margin-right: 12px;
-    color: #FFF;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 4px black;
     border: 1px solid #FFF;
     border-radius: 999px;
     -webkit-transition: all 0.3s ease;
@@ -26,6 +28,6 @@
 .fa-medium:hover {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: rgb(45, 173, 247);
-    border: 1px solid rgb(45, 173, 247);
+    color: rgb(247, 147, 101);
+    border: 1px solid rgb(241, 125, 71);
 }
