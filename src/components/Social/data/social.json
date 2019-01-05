@@ -1,21 +1,25 @@
 [{
     "name": "LinkedIn",
     "url": "https://www.linkedin.com/in/carlamko",
+    "icon_prefix": "fab",
     "icon": "fa-linkedin",
     "display": "LinkedIn"
 }, {
     "name": "GitHub",
     "url": "https://github.com/Okma/",
+    "icon_prefix": "fab",
     "icon": "fa-github",
     "display": "GitHub"
 }, {
     "name": "Medium",
     "url": "https://medium.com/theimpulse",
-    "icon": "fa-medium",
+    "icon_prefix": "fab",
+    "icon": "fa-medium-m",
     "display": "Medium"
 }, {
     "name": "Email",
     "url": "mailto:carl@carlamko.me",
-    "icon": "fa-envelope-o",
+    "icon_prefix": "far",
+    "icon": "fa-envelope",
     "display": "carl@carlamko.me"
 }]

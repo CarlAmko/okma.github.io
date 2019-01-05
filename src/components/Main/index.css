@@ -3,16 +3,12 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     background-image: url('./img/bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .main-hero {
-    margin: 0;
     text-align: center;
 }
 
@@ -22,31 +18,12 @@
     color: white;
     text-shadow: 2px 3px 3px black;
 }
+
 .subtitle {
     font-family: 'Thasadith', sans-serif;
     font-size: 48px;
     color: white;
     text-shadow: 2px 3px 3px black;
-}
-
-.projects {
-    display: inline-block;
-    padding: 12px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    border: 2px solid #FFF;
-    border-radius: 6px;
-    color: #FFF;
-    font-size: 36px;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-}
-
-.projects:hover {
-    background: #FFF;
-    color: rgb(241, 125, 71);
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
 }
 
 .carl-circle {
